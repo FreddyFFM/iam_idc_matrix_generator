@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sso-admin:ListInstances",
+                "sso-admin:ListPermissionSets",
+                "sso-admin:DescribePermissionSet",
+                "sso-admin:GetInlinePolicyForPermissionSet",
+                "sso-admin:ListManagedPoliciesInPermissionSet",
+                "sso-admin:ListAccountAssignments",
+                "sso-admin:ListAccountsForProvisionedPermissionSet",
+                "organizations:ListAccounts",
+                "iam:GetPolicy",
+                "iam:GetPolicyVersion"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
