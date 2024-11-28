@@ -182,10 +182,10 @@ def split_action(action):
     except Exception:
         return {'service': action, 'specific_action': '*'}
 
-def analyse_permissions(filename=None):
+def analyze_permissions(filename=None):
     """Load and analyze permission sets data with detailed policy analysis."""
     try:
-        if not filename:
+        if filename is None:
             # Find the most recent file
             data_dir = Path('./data')
             json_files = list(data_dir.glob('raw_permission_sets_*.json'))
@@ -285,7 +285,7 @@ def analyse_permissions(filename=None):
             if isinstance(row['Conditions'], list) and row['Conditions']:
                 logging.info("Conditions: " + ", ".join(row['Conditions']))
 
-        return expanded_df
+        return json_filename
 
     except Exception as e:
         logging.error(f"Error in main: {str(e)}")

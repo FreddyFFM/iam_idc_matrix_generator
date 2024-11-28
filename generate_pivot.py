@@ -15,7 +15,7 @@ def load_latest_data(filename=None):
     Load the most recent data file from json.
     """
     try:
-        if not filename:
+        if filename is None:
             
             # Get all data files
             data_dir = './data'
@@ -66,9 +66,7 @@ def create_pivot_view(df, output_path='./data/pivot_view.html'):
             aggregatorName='Count',  # Default aggregation method
             rendererName='Table',  # Default visualization
             unusedAttrsVertical=False  # Horizontal unused attributes
-        )
-        
-        logging.info(f"Created interactive pivot table at: {output_path}")
+        )        
         
         # Print summary statistics
         logging.info("\nData Summary:")
@@ -94,6 +92,9 @@ def create_pivot_view(df, output_path='./data/pivot_view.html'):
         ps_summary = pivot_df['PermissionSetName'].value_counts().head(10)
         for ps, count in ps_summary.items():
             logging.info(f"{ps}: {count} actions")
+
+        # Outputpath logging
+        logging.info(f"Created interactive pivot table at: {output_path}")
         
     except Exception as e:
         logging.error(f"Error creating pivot table: {str(e)}")

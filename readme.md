@@ -48,7 +48,7 @@ The following AWS permissions are required:
 1. Clone Repository
 
 ```bash
-git clone [repository-url]
+git clone https://github.com/FreddyFFM/iam_idc_matrix_generator.git
 cd iam_idc_matrix
 ```
 
@@ -72,6 +72,13 @@ Run the main script:
 python main.py
 ```
 
+Now you can open the pivot result in your browser, the link is written to the log output as follows:
+
+```
+INFO Pivot table generation completed successfully
+INFO - Open the Pivot view via pivot/permissions_pivot_20241128_152034.html
+```
+
 ## Contributing
 
 - Fork the repository
@@ -81,7 +88,7 @@ python main.py
 - Create a Pull Request
 
 ## License
-See Licence file
+MIT license
 
 ## Authors
 FreddyFFM

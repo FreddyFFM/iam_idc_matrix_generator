@@ -228,7 +228,7 @@ def create_permission_sets_dataframe():
         logging.error(f"Error creating DataFrame: {str(e)}")
         raise
 
-def store_permission_sets_data():
+def get_permission_data():
     """
     Store permission sets data with assignments and policies to files.
     Returns the DataFrame for potential further processing.

@@ -163,6 +163,7 @@ cython_debug/
 
 # data Directory
 data/
+pivot/
 
 # VScode
 .vscode/

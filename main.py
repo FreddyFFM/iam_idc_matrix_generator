@@ -5,11 +5,12 @@ from generate_pivot import generate_pivot
 
 def main():
 
-    # Get all permissions
-    permission_file = get_permission_data()
+    # # Get all permissions
+    # permissions_file = get_permission_data()
+    permissions_file = None
 
     # Analyze permissions into matrix
-    analyze_file = analyze_permissions(permission_file)
+    analyze_file = analyze_permissions(permissions_file)
 
     # Create Pivot output
     generate_pivot(analyze_file)
