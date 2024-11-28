@@ -95,6 +95,6 @@ FreddyFFM
 
 ## Acknowledgments
 
-AWS IAM Identity Center documentation
-Python community
-Amazon Q Developer
+- AWS IAM Identity Center documentation
+- Python community
+- Amazon Q Developer
